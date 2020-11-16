@@ -1,0 +1,38 @@
+.header {
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+
+    .header__logo {
+        object-fit: contain;
+        font-size: 18px;
+        font-weight: bold;
+        color: darkblue;
+        cursor: pointer;
+    }
+
+    .header__signin {
+        background-color: white;
+        font-size: 15px;
+        font-weight: 300;
+        border: none;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+        cursor: pointer;
+
+        &:focus {
+            outline: 0 !important;
+        }
+    }
+
+    .header__signout {
+        text-decoration: underline;
+        font-style: italic;
+        font-size: 15px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}

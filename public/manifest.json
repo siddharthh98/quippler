@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Quippler",
+  "description": "",
+  "version": "0.0.1",
+  "background": {
+    "scripts": ["app/background.js"]
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png" 
+  },
+  "options_page": "index.html",
+  "permissions": [
+    "storage",
+    "notifications",
+    "contextMenus",
+    "*://developer.mozilla.org/"
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-ZU/1SNGy7DO6qi8YgG0uTi8HKO2lRX9nj5uXkKS2MDk=' https://apis.google.com ; object-src 'self'"
+}
